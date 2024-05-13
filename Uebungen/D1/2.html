@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farbstufen-Rechteck</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        div {
+            height: 100%;
+            box-sizing: border-box;
+            margin: 20px; 
+            background-color: lightblue; 
+            border: 15px solid lightgreen;
+            padding: 10px; 
+        }
+
+        div::before { 
+            content: "";
+            display: block;
+            height: 100%;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
