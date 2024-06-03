@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF8">
+    <title>Demographische Datenerhebung</title>
+</head>
+<body>
+    <form action="/submit_form" method="post">
+        <fieldset>
+            <legend>Persönliche Informationen</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="age">Alter:</label>
+            <input type="number" id="age" name="age"><br><br>
+
+            <label for="gender">Geschlecht:</label>
+            <select id="gender" name="gender">
+                <option value="male">Männlich</option>
+                <option value="female">Weiblich</option>
+                <option value="other">Andere</option>
+            </select>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Bildung und Beruf</legend>
+            <label for="education">Bildungsgrad:</label>
+            <select id="education" name="education">
+                <optgroup label="Schule">
+                    <option value="none">Kein Abschluss</option>
+                    <option value="highschool">Abitur</option>
+                </optgroup>
+                <optgroup label="Hochschule">
+                    <option value="bachelor">Bachelor</option>
+                    <option value="master">Master</option>
+                    <option value="phd">Doktor</option>
+                </optgroup>
+            </select><br><br>
+
+            <label for="job">Beruf:</surfer>:
+            <input type="text" id="job" name="job">
+        </fieldset>
+
+        <input type="submit" value="Absenden">
+    </form>
+</body>
+</html>
