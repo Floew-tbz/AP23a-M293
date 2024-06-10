@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .shop-item {
+            width: 100%;
+            text-align: center;
+
+        }
+
+
+        @media (min-width: 1000px) {
+
+            .grid {
+                display: grid;
+                grid-template-columns: auto auto auto auto auto
+            }
+
+        }
+
+        @media (max-width: 1000px) and (min-width: 801px) {
+
+            .grid {
+                display: grid;
+                grid-template-columns: auto auto auto auto
+            }
+
+        }
+
+
+        @media (max-width: 800px) and (min-width: 601px) {
+
+            .grid {
+                display: grid;
+                grid-template-columns: auto auto auto
+            }
+
+        }
+
+        @media (max-width: 600px) and (min-width: 401px) {
+
+            .grid {
+                display: grid;
+                grid-template-columns: auto auto
+            }
+
+        }
+
+
+        @media (max-width: 400px) {
+
+            .grid {
+                display: grid;
+                grid-template-columns: auto
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Buy Training Sessions</h1>
+    <div class="grid">
+        <div class="shop-item">
+            <img src="pictures/saizo.jpg" alt="Picture 1" class="grid-item">
+            <h2>Sensei Sho</h2>
+            <p>Price: $10</p>
+            <button>Buy</button>
+        </div>
+
+        <div class="shop-item">
+            <img src="pictures/saizo.jpg" alt="Picture 2" class="grid-item">
+            <h2>Sensei Sho the second</h2>
+            <p>Price: $15</p>
+            <button>Buy</button>
+        </div>
+
+        <div class="shop-item">
+            <img src="pictures/saizo.jpg" alt="Picture 3" class="grid-item">
+            <h2>Sensei Sho the third</h2>
+            <p>Price: $20</p>
+            <button>Buy</button>
+        </div>
+
+        <div class="shop-item">
+            <img src="pictures/saizo.jpg" alt="Picture 4" class="grid-item">
+            <h2>Sensei Sho the forth</h2>
+            <p>Price: $25</p>
+            <button>Buy</button>
+        </div>
+
+        <div class="shop-item">
+            <img src="pictures/saizo.jpg" alt="Picture 5" class="grid-item">
+            <h2>Sensei Sho the fifth</h2>
+            <p>Price: $30</p>
+            <button>Buy</button>
+        </div>
+
+        <div class="shop-item">
+            <img src="pictures/saizo.jpg" alt="Picture 6" class="grid-item">
+            <h2>Sensei Sho the first</h2>
+            <p>Price: $35</p>
+            <button>Buy</button>
+        </div>
+    </div>
+</body>
+
+</html>

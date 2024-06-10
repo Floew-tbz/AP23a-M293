@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pocket Gallery</title>
+    <style>
+        img {
+            width: 75%;
+            height: auto;
+        }
+
+        @media (min-width: 1000px) {
+
+            h1 {
+                font-size: 100px;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto auto auto auto
+            }
+
+        }
+
+        @media (max-width: 1000px) and (min-width: 801px) {
+
+            h1 {
+                font-size: 80px;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+            }
+
+        }
+
+        @media (max-width: 800px) and (min-width: 601px) {
+
+            h1 {
+                font-size: 60px;
+            }
+
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto auto;
+            }
+
+        }
+
+        @media (max-width: 600px) and (min-width: 401px) {
+
+            h1 {
+                font-size: 40px;
+            }
+
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+
+        }
+
+        @media (max-width: 400px) and (min-width: 201px) {
+
+            h1 {
+                font-size: 20px;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Picllery</h1>
+
+    <div class="grid-container">
+        <img src="pictures/saizo.jpg" alt="Picture 1" class="grid-item">
+        <img src="pictures/saizo.jpg" alt="Picture 2" class="grid-item">
+        <img src="pictures/saizo.jpg" alt="Picture 3" class="grid-item">
+        <img src="pictures/saizo.jpg" alt="Picture 4" class="grid-item">
+        <img src="pictures/saizo.jpg" alt="Picture 5" class="grid-item">
+        <img src="pictures/saizo.jpg" alt="Picture 6" class="grid-item">
+    </div>
+</body>
+
+</html>
