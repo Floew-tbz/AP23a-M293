@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spiele-Umfrage</title>
+</head>
+
+<body>
+    <h1>Spiele-Umfrage</h1>
+    <form action="/submit" method="post">
+        <label>Welches ist Ihr aktuelles Lieblingsshrekspiel?</label><br>
+        <fieldset>
+            <legend>Wählen Sie ein Spiel aus:</legend>
+            <input type="radio" id="game1" name="favorite-game" value="game1">
+            <label for="game1">Shrek: The Game 1</label><br>
+            <input type="radio" id="game2" name="favorite-game" value="game2">
+            <label for="game2">Shrek: The Game 2</label><br>
+            <input type="radio" id="game3" name="favorite-game" value="game3">
+            <label for="game3">Shrek: The Game 3</label><br>
+            <input type="radio" id="game4" name="favorite-game" value="game4">
+            <label for="game4">Shrek: The Game 4</label><br>
+            <input type="radio" id="game5" name="favorite-game" value="game5">
+            <label for="game5">Shrek: The Game 5</label><br>
+            <input type="radio" id="game6" name="favorite-game" value="game6">
+            <label for="game6">Shrek: The Game 6</label><br>
+            <input type="radio" id="game7" name="favorite-game" value="game7">
+            <label for="game7">Shrek: The Game 7</label><br>
+            <input type="radio" id="game8" name="favorite-game" value="game8">
+            <label for="game8">Shrek: The Game 8</label><br>
+            <input type="radio" id="game9" name="favorite-game" value="game9">
+            <label for="game9">Shrek: The Game 9</label><br>
+            <input type="radio" id="game10" name="favorite-game" value="game10">
+            <label for="game10">Shrek: The Game 10</label><br>
+            <input type="radio" id="no-games" name="favorite-game" value="no-games">
+            <label for="no-games">Ich spiele kein Shrek Spiel</label><br>
+            <input type="radio" id="other" name="favorite-game" value="other">
+            <label for="other">Andere:</label>
+            <input type="text" name="other-game"><br>
+        </fieldset>
+        <br>
+
+        <label>Welche der folgenden Spiele spielen Sie regelmäßig?</label><br>
+        <fieldset>
+            <legend>Wählen Sie Ihre Spiele aus:</legend>
+            <input type="checkbox" id="reg-game1" name="regular-games[]" value="game1">
+            <label for="reg-game1">Team Fortress 3</label><br>
+            <input type="checkbox" id="reg-game2" name="regular-games[]" value="game2">
+            <label for="reg-game2">Dotta 3</label><br>
+            <input type="checkbox" id="reg-game3" name="regular-games[]" value="game3">
+            <label for="reg-game3">CS 3</label><br>
+            <input type="checkbox" id="reg-game4" name="regular-games[]" value="game4">
+            <label for="reg-game4">Half Life 3</label><br>
+            <input type="checkbox" id="reg-game5" name="regular-games[]" value="game5">
+            <label for="reg-game5">Portal 3</label><br>
+            <input type="checkbox" id="reg-game6" name="regular-games[]" value="game6">
+            <label for="reg-game6">halflife 2: Episode 3</label><br>
+            <input type="checkbox" id="reg-game7" name="regular-games[]" value="game7">
+            <label for="reg-game7">Left 4 Dead: 3</label><br>
+            <input type="checkbox" id="reg-game8" name="regular-games[]" value="game8">
+            <label for="reg-game8">The Lab 2</label><br>
+            <input type="checkbox" id="reg-game9" name="regular-games[]" value="game9">
+            <label for="reg-game9">Artifact 2</label><br>
+            <input type="checkbox" id="reg-game10" name="regular-games[]" value="game10">
+            <label for="reg-game10">Day Of the Defeat 3</label><br>
+            <input type="checkbox" id="no-reg-games" name="regular-games[]" value="no-games">
+            <label for="no-reg-games">Ich spiele keine Spiele</label><br>
+            <input type="checkbox" id="other-reg" name="regular-games[]" value="other">
+            <label for="other-reg">Andere:</label>
+            <input type="text" name="other-regular-game"><br>
+        </fieldset>
+        <br>
+
+        <input type="submit" value="Absenden">
+    </form>
+    <select>
+        <optgroup label="Früchte">
+            <option value="apfel">Apfel</option>
+            <option value="banane">Banane</option>
+        </optgroup>
+        <optgroup label="Gemüse">
+            <option value="karotte">Karotte</option>
+            <option value="brokkoli">Brokkoli</option>
+        </optgroup>
+    </select>
+
+</body>
+
+</html>
