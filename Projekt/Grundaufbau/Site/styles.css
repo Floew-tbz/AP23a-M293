@@ -115,7 +115,19 @@ section {
   font-size: 25pt;
   font-family: "GROBOLD", Arial, sans-serif;
 }
+.content ul {
+  list-style: none;
+  padding: 0;
+}
 
+.content ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.content ul li:last-child {
+  border-bottom: none;
+}
 .actions {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -189,4 +201,24 @@ img {
   margin: 0;
   padding: 0;
   border: none;
+}
+
+.footer-button {
+  background-color: #f4d51f;
+  /* Green */
+  border: none;
+  color: #210002;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 30px;
+}
+
+.footer-button:hover {
+  background-color: #be1622;
 }
