@@ -2,71 +2,95 @@
 <html lang="de">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrierung - Pfadi Webseite</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rockingsoda&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Grobold&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Über uns - PfadiMH</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <h1>Registrierungsformular</h1>
-    <form action="confirmation.html" method="post" class="form-horizontal">
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="#" class="logo">
+        <img
+          src="https://image.jimcdn.com/app/cms/image/transf/dimension=320x10000:format=png/path/s4c5d6f225e690de2/image/i1750ff59e7550964/version/1703176281/image.png"
+          alt="Logo" />
+      </a>
+      <a href="Groups.html" class="nav-link">Gruppenübersicht</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-overlay">
+        <h1>Join Us</h1>
+      </div>
+    </section>
+    <section class="content">
+      <h1>Registrierungsformular</h1>
+      <form action="confirmation.html" method="post" class="form-horizontal">
         <div class="form-group">
-            <label>Geschlecht:</label>
-            <label>
-                <input type="radio" name="geschlecht" value="m" required> Männlich
-            </label>
-            <label>
-                <input type="radio" name="geschlecht" value="w" required> Weiblich
-            </label>
+          <label>Geschlecht:</label>
+          <label>
+            <input type="radio" name="geschlecht" value="m" required> Männlich
+          </label>
+          <label>
+            <input type="radio" name="geschlecht" value="w" required> Weiblich
+          </label>
         </div>
         <div class="form-group">
-            <label for="vorname">Vorname:</label>
-            <input type="text" id="vorname" name="vorname" required>
+          <label for="vorname">Vorname:</label>
+          <input type="text" id="vorname" name="vorname" required>
         </div>
         <div class="form-group">
-            <label for="nachname">Nachname:</label>
-            <input type="text" id="nachname" name="nachname" required>
+          <label for="nachname">Nachname:</label>
+          <input type="text" id="nachname" name="nachname" required>
         </div>
         <div class="form-group">
-            <label for="email">E-Mail:</label>
-            <input type="email" id="email" name="email" required>
+          <label for="email">E-Mail:</label>
+          <input type="email" id="email" name="email" required>
         </div>
         <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
         </div>
         <div class="form-group">
-            <label for="adresse">Adresse:</label>
-            <input type="text" id="adresse" name="adresse" required>
+          <label for="adresse">Adresse:</label>
+          <input type="text" id="adresse" name="adresse" required>
         </div>
         <div class="form-group">
-            <label for="plz">PLZ:</label>
-            <input type="text" id="plz" name="plz" required>
+          <label for="plz">PLZ:</label>
+          <input type="text" id="plz" name="plz" required>
         </div>
         <div class="form-group">
-            <label for="ort">Ort:</label>
-            <input type="text" id="ort" name="ort" required>
+          <label for="ort">Ort:</label>
+          <input type="text" id="ort" name="ort" required>
         </div>
         <div class="form-group">
-            <label for="land">Land:</label>
-            <select id="land" name="land" required>
-                <option value="">Bitte wählen</option>
-                <option value="ch">Schweiz</option>
-                <option value="de">Deutschland</option>
-                <option value="at">Österreich</option>
-                <!-- Weitere Länder hier hinzufügen -->
-            </select>
+          <label for="land">Land:</label>
+          <select id="land" name="land" required>
+            <option value="">Bitte wählen</option>
+            <option value="ch">Schweiz</option>
+            <option value="de">Deutschland</option>
+            <option value="at">Österreich</option>
+            <option value="ad">Anderes</option>
+          </select>
         </div>
         <div class="form-group">
-            <label class="checkbox-label">
-                <input type="checkbox" id="datenschutz" name="datenschutz" required> Datenschutz akzeptieren
-            </label>
+          <label class="checkbox-label">
+            <input type="checkbox" id="datenschutz" name="datenschutz" required> Datenschutz akzeptieren
+          </label>
         </div>
         <button type="submit">Registrieren</button>
-    </form>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; PfadiMH</p>
+    <a href="about.html" class="footer-button">Über uns</a>
+    <a href="registration.html" class="footer-button">Registrieren</a>
+    <a href="login.html" class="footer-button">Login</a>
+  </footer>
 </body>
 
 </html>
