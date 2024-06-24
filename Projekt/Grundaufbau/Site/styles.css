@@ -4,7 +4,6 @@ html {
     margin: 0;
     padding: 0;
     font-family: 'Rockwell', Arial, sans-serif;
-    /* Updated font family */
     background-color: #f8f8f8;
     height: 100%;
     display: flex;
@@ -14,7 +13,6 @@ html {
 header,
 footer {
     background: #210002;
-    /* Updated background color */
     color: white;
     padding: 1em;
     text-align: center;
@@ -31,19 +29,16 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: auto;
-    /* Macht den Footer flexibel, damit er am Boden bleibt */
 }
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2em;
+    
     flex: 1;
-    /* Nimmt den verbleibenden Platz ein, um den Footer nach unten zu schieben */
 }
 
-/* Navbar styles */
 .navbar {
     display: flex;
     justify-content: center;
@@ -67,12 +62,13 @@ main {
     object-fit: cover;
 }
 
-/* Hero section */
 .hero {
     position: relative;
     width: 100%;
     height: 300px;
     background: url('https://www.mova.ch/wp-content/uploads/2022/07/20220723082421_DBR-Kopie-1024x683.jpg') center/cover no-repeat;
+    margin: 0;
+    padding: 0;
 }
 
 .hero-overlay {
@@ -82,10 +78,12 @@ main {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    /* Black tint */
     display: flex;
     justify-content: center;
     align-items: center;
+}
+section {
+    padding: 2em;
 }
 
 .hero h1 {
@@ -93,10 +91,8 @@ main {
     color: #fff;
     margin: 0;
     font-family: 'GROBOLD', Arial, sans-serif;
-    /* Updated font */
 }
 
-/* Stile für die Startseite */
 .content {
     text-align: center;
     max-width: 800px;
@@ -106,12 +102,9 @@ main {
 .content h2 {
     margin-bottom: 1em;
     font-size: 25pt;
-    /* Updated font size */
     font-family: 'GROBOLD', Arial, sans-serif;
-    /* Updated font */
 }
 
-/* Grid Layout für Aktionen auf der Startseite */
 .actions {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -132,7 +125,6 @@ main {
     cursor: pointer;
 }
 
-/* Grid Layout für Gruppen auf der Gruppenseite */
 .groups {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -153,20 +145,15 @@ main {
 .group-item h3 {
     margin-bottom: 0.5em;
     font-size: 16pt;
-    /* Updated font size */
     font-family: 'GROBOLD', Arial, sans-serif;
-    /* Updated font */
 }
 
 .group-item p {
     margin: 0;
     font-size: 12pt;
-    /* Updated font size */
     font-family: 'Rockwell', Arial, sans-serif;
-    /* Updated font */
 }
 
-/* Responsive Design */
 @media (max-width: 1200px) {
     .groups {
         grid-template-columns: repeat(2, 1fr);
@@ -181,4 +168,11 @@ main {
     .groups {
         grid-template-columns: 1fr;
     }
+}
+
+img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
 }
