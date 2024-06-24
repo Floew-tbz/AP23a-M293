@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Rockingsoda&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grobold&display=swap");
+
+body {
+  font-family: "Rockingsoda", sans-serif;
+  background-color: #f4d51f;
+  color: #210002;
+}
+
+h1 {
+  font-family: "Grobold", sans-serif;
+  font-size: 25pt;
+  text-align: center;
+  color: #be1622;
+}
+
+.form-horizontal {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  flex: 1;
+  margin-right: 10px;
+  font-size: 16pt;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group select {
+  flex: 2;
+  padding: 10px;
+  font-size: 16pt;
+  border: 2px solid #be1622;
+  border-radius: 5px;
+}
+
+.form-group input[type="radio"] {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.form-group input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 16pt;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #be1622;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16pt;
+  font-family: "Grobold", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #210002;
+}
