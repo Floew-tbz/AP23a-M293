@@ -105,9 +105,8 @@ section {
 }
 
 .content {
-  text-align: center;
-  max-width: 800px;
-  margin-bottom: 2em;
+    text-align: center;
+    max-width: 800px;
 }
 
 .content h2 {
@@ -129,10 +128,9 @@ section {
   border-bottom: none;
 }
 .actions {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1em;
-  margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
 }
 
 .action-item {
