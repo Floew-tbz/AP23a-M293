@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Rockwell';
-    src: url('/Projekt/Grundaufbau/Rockinsoda.ttf') format('truetype');
+    src: url('Rockinsoda.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'GROBOLD';
-    src: url('/Projekt/Grundaufbau/GROBOLD.ttf') format('truetype');
+    src: url('GROBOLD.ttf') format('truetype');
 }
 
 /* Flexbox Layout für Struktur */
