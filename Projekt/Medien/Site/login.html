@@ -1,52 +1,63 @@
 <!DOCTYPE html>
 <html lang="de">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - PfadiMH</title>
     <link rel="stylesheet" href="styles.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navbar">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="#" class="logo">
-                <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=320x10000:format=png/path/s4c5d6f225e690de2/image/i1750ff59e7550964/version/1703176281/image.png"
-                    alt="Logo" />
-            </a>
-            <a href="Groups.html" class="nav-link">Gruppenübersicht</a>
-        </nav>
+      <nav class="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="#" class="logo">
+          <picture>
+            <source
+              srcset="
+                https://image.jimcdn.com/app/cms/image/transf/dimension=320x10000:format=webp/path/s4c5d6f225e690de2/image/i1750ff59e7550964/version/1703176281/image.webp
+              "
+              type="image/webp"
+            />
+            <img
+              src="https://image.jimcdn.com/app/cms/image/transf/dimension=320x10000:format=png/path/s4c5d6f225e690de2/image/i1750ff59e7550964/version/1703176281/image.png"
+              alt="Logo"
+            />
+          </picture>
+        </a>
+        <a href="Groups.html" class="nav-link">Gruppenübersicht</a>
+      </nav>
     </header>
     <main>
-        <section class="hero">
-            <div class="hero-overlay">
-                <h1>Login</h1>
-            </div>
-        </section>
-        <section class="content">
-            <h1>Login Formular</h1>
-            <form action="index.html" method="post" class="form-horizontal">
-                <div class="form-group">
-                    <label for="email">E-Mail:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <button type="submit">Login</button>
-            </form>
-            <p>Haben Sie Ihr Passwort vergessen? <a href="forgot-password.html">Reset password</a></p>
-        </section>
+      <section class="hero">
+        <div class="hero-overlay">
+          <h1>Login</h1>
+        </div>
+      </section>
+      <section class="content">
+        <h1>Login Formular</h1>
+        <form action="index.html" method="post" class="form-horizontal">
+          <div class="form-group">
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Passwort:</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <button type="submit">Login</button>
+        </form>
+        <p>
+          Haben Sie Ihr Passwort vergessen?
+          <a href="forgot-password.html">Passwort zurücksetzen</a>
+        </p>
+      </section>
     </main>
     <footer>
-        <p>&copy; PfadiMH</p>
-        <a href="about.html" class="footer-button">Über uns</a>
-        <a href="registration.html" class="footer-button">Registrieren</a>
-        <a href="login.html" class="footer-button">Login</a>
+      <p>&copy; PfadiMH</p>
+      <a href="about.html" class="footer-button">Über uns</a>
+      <a href="registration.html" class="footer-button">Registrieren</a>
+      <a href="login.html" class="footer-button">Login</a>
     </footer>
-</body>
-
+  </body>
 </html>
