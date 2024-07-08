@@ -90,7 +90,7 @@ sass.render({ file: inputScssFilePath }, (err, result) => {
 
 // Ressourcen kopieren (Schriftarten, Bilder, etc.)
 exec(
-  `npx copyfiles -u 1 "${paths.src}/*.{ttf,jpg,png,svg,mp4}" ${paths.dist}`,
+  `npx copyfiles -u 1 "${paths.src}/*.{ttf,jpg,png,svg,mp4,webm}" ${paths.dist}`,
   (err, stdout, stderr) => {
     if (err) {
       console.error(`Error copying resources: ${stderr}`);
