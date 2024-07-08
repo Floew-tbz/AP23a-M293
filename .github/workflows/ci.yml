@@ -53,7 +53,7 @@ jobs:
           path: Projekt/Medien
 
       - name: List contents of downloaded dist folder
-        run: ls -la Projekt/Medien/dist
+        run: ls -la Projekt/Medien
 
       - name: Install dependencies
         run: npm ci
