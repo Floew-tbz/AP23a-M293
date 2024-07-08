@@ -46,11 +46,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Create dist directory
+        run: mkdir -p Projekt/Medien/dist
+
       - name: Download dist folder
         uses: actions/download-artifact@v3
         with:
           name: dist
-          path: Projekt/Medien
+          path: Projekt/Medien/dist
 
       - name: List contents of downloaded dist folder
         run: ls -la Projekt/Medien
